@@ -1,0 +1,33 @@
+.newtasks{
+    border:10px solid rgba(0, 13, 255, 0.455);
+    display:block;
+    margin:auto;
+    width:500px;
+    height:700px;
+    text-align: center;
+}
+input[type=text]{
+    height: 40px;
+    width:450px;
+    font-size: 18px;
+    border-color: blueviolet;
+    border-radius: 10px;
+}
+input[type=text]:focus{
+    border: 5px solid blueviolet;
+}
+button{
+    margin:20px;
+    padding:5px;
+    background-color: rgba(50, 47, 223, 0.416);
+    font-weight: bold;
+    color:white;
+    border-radius: 9px;
+}
+button:hover{
+    background-color: rgb(110, 38, 177);
+    color:white;
+}
+li{
+    list-style: none;
+}

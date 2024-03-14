@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <nav id="navbar">
+            <div class="image">
+                <img src="favtwitter.png " alt="not loaded">
+            </div>
+            <ul id="ullist">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+            <ul id="ullist2">
+                <button id="btn" onclick="togglebutton()">Menu</button>
+                <li><button>Log In</button></li>
+                <li><button>Sign Up</button></li>
+            </ul>
+        </nav>
+    </div>
+    <script>
+        let a = document.getElementById("ullist");
+        const togglebutton = ()=>{
+                    if(a.style.display=="none"){
+                        a.style.display = "block";
+                    }else{
+                        a.style.display = "none";
+                    }
+                }
+        window.addEventListener("resize",(event)=>{
+            if(window.innerWidth>=920){
+                a.style.display = "flex";
+            }
+            else{
+
+                a.style.display ="none"
+            }
+        })
+    </script>
+</body>
+</html>

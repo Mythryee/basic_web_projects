@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bg Change</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <p>Switching between dark and light modes</p>
+        <button id="btn">dark mode</button>
+    </div>
+    <script>
+        let c = document.querySelector('.container')
+        let p = document.querySelector('p')
+        let b = document.getElementById('btn')
+        b.addEventListener('click',()=>{
+            if(c.style.backgroundColor == 'white'){
+                c.style.backgroundColor = 'black'
+                p.style.color = 'white'
+                b.style.backgroundColor = 'white'
+                b.style.color = 'black'
+                b.innerHTML = 'light mode'
+            }else{
+                c.style.backgroundColor = 'white'
+                p.style.color = 'black'
+                b.style.backgroundColor = 'black'
+                b.style.color = 'white'
+                b.innerHTML = "dark mode"
+            }
+        })
+    </script>
+</body>
+</html>

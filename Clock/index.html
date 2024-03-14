@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container1">
+            <h1>Time:</h1>
+            <span></span>
+            
+        </div>
+        <div class="container2">
+            <h1>Date:</h1>
+            <span id="datenow"></span>
+        </div>
+
+    </div>
+
+    <script>
+        updateTime=()=>{
+
+            let d = new Date();
+            let h = d.getHours();
+            let m = d.getMinutes();
+            let s = d.getSeconds();
+            document.querySelector('span').innerHTML = `${h} :${m} :${s} `;
+        }
+        updateDate = ()=>{
+            let d = new Date();
+            let day = d.getDate();
+            let mon = d.getMonth();
+            let year = d.getFullYear();
+            document.getElementById('datenow').innerHTML = `${day}/${mon}/${year} `;
+
+        }
+        let fn = setInterval(()=>{updateTime(),updateDate()},1000)
+
+    </script>
+</body>
+</html>

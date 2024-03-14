@@ -1,0 +1,102 @@
+
+body{
+    margin: 0px;
+    padding:0px;
+}
+.container{
+    max-width: 1600px;
+}
+#navbar{
+    background-color: black;
+    border:2px solid red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#btn{
+    display: none;
+}
+#navbar .image img {
+    width: 70px;
+    height: 70px;
+}
+#navbar ul{
+    display:flex;
+}
+#navbar ul li{
+    list-style: none;
+    margin:5px 30px;
+}
+#navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+#navbar a:hover {
+    font-weight: bolder;
+}
+#navbar button {
+    height: 35px;
+    width: 80px;
+    background-color: blueviolet;
+    color: white;
+    font-size: 15px;
+    border-radius: 9px;
+}
+#navbar button:hover {
+    height: 37px;
+    width: 82px;
+    font-weight: bold;
+    background-color: rgba(174, 78, 234, 0.992);
+}
+@media screen and (max-width:870px){
+    .container{
+        max-width: 870px;
+    }
+    #navbar{
+        background-color: black;
+        border:2px solid red;
+        display: flex;
+        flex-direction: column;
+    }
+    #navbar #ullist{
+        display: none;
+    }
+    #navbar #btn{
+        display:inline;
+    }
+}
+@media screen and (max-width:450px){
+    .container{
+        max-width: 450px;
+    }
+    #navbar{
+        background-color: black;
+        border:2px solid red;
+        display: flex;
+        flex-direction: column;
+    }
+    #navbar #ullist{
+        display: none;
+    }
+    #navbar #ullist2 li{
+        display:none
+    }
+    
+}
+#btn{
+    border:2px solid white;
+    margin-top:5px;
+    margin-right:20px;
+}
+
+/* @media screen and (min-width: 871px) {
+    #navbar #ullist {
+        display: flex;
+    }
+    #navbar #btn {
+        display: none;
+    }
+} */
+
+    

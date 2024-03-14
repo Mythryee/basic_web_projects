@@ -1,0 +1,111 @@
+body{
+    background-color: rgba(197, 174, 174, 0.395);
+}
+.container{
+    display: block;
+    margin: auto;
+    border:10px solid black;
+    width:450px;
+    height:570px;
+    border-radius: 20px;
+    background-color: rgba(58, 49, 49, 0.614);
+}
+.screen input{
+    margin:15px;
+    width:410px;
+    height:70px;
+    font-size: 35px;
+    border:5px solid black;
+    background-color: rgba(31, 29, 29, 0.53);
+    border-radius: 10px;
+    color:white;
+}
+button{
+    /* font-size: 20px; */
+    font-weight:bold ;
+}
+.box1{
+    margin: 10px;
+}
+.box1 button{
+    height:65px;
+    width:200px;
+    margin:5px;
+    border:5px solid black;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+}
+.box1 button:hover{
+    height:66px;
+    width:205px;
+}
+.box2{
+    margin: 15px;
+}
+.box2 button{
+    height:60px;
+    width:85px;
+    margin:8px;
+    border:5px solid black;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+}
+.box2 button:hover{
+    height:63px;
+    width:88px;
+}
+.box3{
+    margin: 15px;
+}
+.box3 button{
+    height:60px;
+    width:85px;
+    margin:8px;
+    border:5px solid black;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+}
+.box3 button:hover{
+    height:63px;
+    width:88px;
+}
+.box4{
+    margin: 15px;
+}
+.box4 button{
+    height:60px;
+    width:85px;
+    margin:8px;
+    border:5px solid black;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+}
+.box4 button:hover{
+    height:63px;
+    width:88px;
+}
+.box5{
+    margin: 15px;
+}
+.box5 button{
+    height:60px;
+    width:85px;
+    margin:8px;
+    border:5px solid black;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+}
+.box5 button:hover{
+    height:63px;
+    width:88px;
+}

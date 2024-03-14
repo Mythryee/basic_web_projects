@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="newtasks">
+        <h1>TO DO LIST</h1>
+        <input type="text" name="todo" id="todo" placeholder="Enter your task">
+        <button class="btn1" onclick="push()">Add To Do</button>
+        <div class="tasks">
+        </div>
+    </div>
+    <script>
+        const push = ()=>{
+            if(document.getElementById('todo').value.length==0){
+                alert("Please enter some valid Test!")
+            }else{
+                let li = document.createElement('li')
+                let rmvbtn = document.createElement('button');
+                rmvbtn.innerText='X';
+                rmvbtn.className='pop';
+                rmvbtn.onclick=function(){pop(this)};
+                li.append(document.createTextNode(document.getElementById('todo').value));
+                li.append(rmvbtn);
+                document.querySelector('.tasks').appendChild(li);
+                document.getElementById('todo').value="";
+            }
+        }
+        
+        const pop = (btn)=>{
+            let li = btn.parentElement;
+            let div = li.parentElement;
+            div.removeChild(li);
+        }
+
+        
+    </script>
+</body>
+</html>
